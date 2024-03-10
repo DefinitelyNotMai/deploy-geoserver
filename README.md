@@ -1,4 +1,4 @@
-#	-- deploy-geoserver --
+# -- deploy-geoserver --
 
 
 What is GEOSERVER?
@@ -21,7 +21,9 @@ What is GEOSERVER?
 	~ enter "git clone {paste your copied url here.}"
 	~ enter "sh geo.sh" and enter your password to run the script to install the GEOSERVER.
 
-#to run the geoserver;
+  	~open your browser and enter "http://localhost:8080" in the search bar to open the GEOSERVER-GUI.
+
+# to run the geoserver;
 	~ open your terminal,
 	~ enter "cd ~/usr/share/geoserver/bin"
 	~ enter sh startup.sh
