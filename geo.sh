@@ -26,7 +26,10 @@ echo "export GEOSERVER_HOME=/usr/share/geoserver" >> ~/.profile
 . ~/.profile
 
 # make the GEOSERVER ready for usage by uncommenting specific lines of code.
-sed -i "141d;162d;193d;198d" /usr/share/geoserver/webapps/geoserver/WEB-INF/web.xml
+sed -i "141d" /usr/share/geoserver/webapps/geoserver/WEB-INF/web.xml
+sed -i "161d" /usr/share/geoserver/webapps/geoserver/WEB-INF/web.xml
+sed -i "191d" /usr/share/geoserver/webapps/geoserver/WEB-INF/web.xml
+sed -i "195d" /usr/share/geoserver/webapps/geoserver/WEB-INF/web.xml
 
 # finally starting the GEOSERVER for the first time.
 sh /usr/share/geoserver/bin/startup.sh
