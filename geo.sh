@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 # add postgresql apt repository.
 sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -15,7 +15,7 @@ sudo apt install default-jdk default-jre postgresql postgis unzip
 
 # creation of a new directory and put GEOSERVER in it and make the user the owner of the folder.
 sudo mkdir /usr/share/geoserver
-sudo chown -R $(whoami):$(whoami) /usr/share/geoserver
+sudo chown -R "$(whoami)":"$(whoami)" /usr/share/geoserver
 
 # download the geoserver-main-latest-bin.zip and unzip it.
 wget https://build.geoserver.org/geoserver/main/geoserver-main-latest-bin.zip -P /usr/share/geoserver
