@@ -19,7 +19,7 @@ sudo chown -R "$(whoami)":"$(whoami)" /usr/share/geoserver
 
 # download the geoserver-main-latest-bin.zip and unzip it.
 wget https://build.geoserver.org/geoserver/main/geoserver-main-latest-bin.zip -P /usr/share/geoserver
-unzip /usr/share/geoserver/geoserver-main-latest-bin.zip
+unzip /usr/share/geoserver/geoserver-main-latest-bin.zip -d /usr/share/geoserver
 
 # setup a variable to make the GEOSERVER  workable
 echo "export GEOSERVER_HOME=/usr/share/geoserver" >> ~/.profile
